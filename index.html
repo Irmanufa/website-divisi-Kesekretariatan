@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Divisi Kesekretariatan IRMANUFA - Ikatan Remaja Masjid Jami' Nurul Falah, Desa Ujungjaya"
+    />
+    <meta name="theme-color" content="#2d6a4f" />
+    <title>IRMANUFA | Divisi Kesekretariatan</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <div class="logo-img">
+            <img src="logo.png" alt="Logo IRMANUFA" id="logoNav" />
+          </div>
+          <div class="logo-text">
+            <span>DIVISI KESEKRETARIATAN</span>
+            <small>Ikatan Remaja Masjid Jami Nurul Falah Desa UjungJaya</small>
+          </div>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#program" class="nav-link">Program</a></li>
+          <li><a href="#ketua" class="nav-link">Ketua</a></li>
+          <li><a href="#jadwal" class="nav-link">Jadwal</a></li>
+          <li><a href="#galeri" class="nav-link">Galeri</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO SLIDESHOW ==================== -->
+    <section id="home" class="hero">
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="slide1.png" alt="Slide 1" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <div class="caption-badge">IRMANUFA</div>
+            <h1>Divisi <span class="highlight">Kesekretariatan</span></h1>
+            <p>Ikatan Remaja Masjid Jami' Nurul Falah • Desa Ujungjaya</p>
+            <div class="slide-buttons">
+              <a href="#program" class="btn-primary"
+                ><i class="fas fa-calendar-alt"></i> Program</a
+              >
+              <a href="#jadwal" class="btn-outline-light"
+                ><i class="fas fa-clock"></i> Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="slide2.png" alt="Slide 2" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <div class="caption-badge">IRMANUFA</div>
+            <h1>Divisi <span class="highlight">Kesekretariatan</span></h1>
+            <p>Ikatan Remaja Masjid Jami' Nurul Falah • Desa Ujungjaya</p>
+            <div class="slide-buttons">
+              <a href="#program" class="btn-primary"
+                ><i class="fas fa-calendar-alt"></i> Program</a
+              >
+              <a href="#jadwal" class="btn-outline-light"
+                ><i class="fas fa-clock"></i> Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="slide3.png" alt="Slide 3" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <div class="caption-badge">IRMANUFA</div>
+            <h1>Divisi <span class="highlight">Kesekretariatan</span></h1>
+            <p>Ikatan Remaja Masjid Jami' Nurul Falah • Desa Ujungjaya</p>
+            <div class="slide-buttons">
+              <a href="#program" class="btn-primary"
+                ><i class="fas fa-calendar-alt"></i> Program</a
+              >
+              <a href="#jadwal" class="btn-outline-light"
+                ><i class="fas fa-clock"></i> Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="slide4.png" alt="Slide 4" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <div class="caption-badge">IRMANUFA</div>
+            <h1>Divisi <span class="highlight">Kesekretariatan</span></h1>
+            <p>Ikatan Remaja Masjid Jami' Nurul Falah • Desa Ujungjaya</p>
+            <div class="slide-buttons">
+              <a href="#program" class="btn-primary"
+                ><i class="fas fa-calendar-alt"></i> Program</a
+              >
+              <a href="#jadwal" class="btn-outline-light"
+                ><i class="fas fa-clock"></i> Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="slide fade">
+          <img src="slide5.png" alt="Slide 5" />
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <div class="caption-badge">IRMANUFA</div>
+            <h1>Divisi <span class="highlight">Kesekretariatan</span></h1>
+            <p>Ikatan Remaja Masjid Jami' Nurul Falah • Desa Ujungjaya</p>
+            <div class="slide-buttons">
+              <a href="#program" class="btn-primary"
+                ><i class="fas fa-calendar-alt"></i> Program</a
+              >
+              <a href="#jadwal" class="btn-outline-light"
+                ><i class="fas fa-clock"></i> Jadwal</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </section>
+
+    <!-- ==================== TENTANG DIVISI ==================== -->
+    <section id="tentang" class="tentang">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tentang Kami</span>
+          <h2>Divisi <span class="text-green">Kesekretariatan</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Mengelola administrasi, inventaris, dan kebutuhan sekretariat untuk
+            mendukung kelancaran roda organisasi IRMANUFA
+          </p>
+        </div>
+        <div class="tentang-grid">
+          <div class="tentang-card">
+            <div class="card-icon"><i class="fas fa-boxes"></i></div>
+            <h3>Inventaris</h3>
+            <p>
+              Pengecekan dan pengelolaan barang inventaris IRMANUFA secara
+              berkala.
+            </p>
+          </div>
+          <div class="tentang-card">
+            <div class="card-icon">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3>Baksos Sekre</h3>
+            <p>Bakti sosial untuk kebersihan dan kenyamanan sekretariat.</p>
+          </div>
+          <div class="tentang-card">
+            <div class="card-icon">
+              <i class="fas fa-briefcase-medical"></i>
+            </div>
+            <h3>P3K Sederhana</h3>
+            <p>Menyediakan perlengkapan P3K di ruangan inventaris.</p>
+          </div>
+          <div class="tentang-card">
+            <div class="card-icon"><i class="fas fa-archive"></i></div>
+            <h3>Administrasi</h3>
+            <p>Pengelolaan dokumen dan arsip organisasi dengan rapi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROGRAM KERJA ==================== -->
+    <section id="program" class="program">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Program Kerja</span>
+          <h2>Kegiatan <span class="text-green">Rutin & Unggulan</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Program yang kami jalankan berdasarkan proker Divisi Kesekretariatan
+            IRMANUFA
+          </p>
+        </div>
+        <div class="program-grid">
+          <div class="program-item">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Cek Barang Inventaris</h3>
+            <p>Pengecekan barang inventaris IRMANUFA</p>
+            <span class="program-tag">Minggu Siang</span>
+          </div>
+          <div class="program-item">
+            <i class="fas fa-broom"></i>
+            <h3>Baksos Sekretariat</h3>
+            <p>Bakti sosial kebersihan sekretariat</p>
+            <span class="program-tag">1 Bulan 1 Kali</span>
+          </div>
+          <div class="program-item">
+            <i class="fas fa-band-aid"></i>
+            <h3>P3K Sederhana</h3>
+            <p>Menyediakan P3K di ruangan inventaris</p>
+            <span class="program-tag">Terjadwal</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KETUA DIVISI ==================== -->
+    <section id="ketua" class="ketua">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Pengurus</span>
+          <h2>Ketua <span class="text-green">Divisi</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="ketua-card">
+          <div class="ketua-foto">
+            <div class="foto-wrapper">
+              <img src="chindy.png" alt="Chindy Kharisya Putri" />
+            </div>
+            <div class="badge-ketua">
+              <i class="fas fa-certificate"></i> Ketua Divisi
+            </div>
+          </div>
+          <div class="ketua-info">
+            <h3>Chindy Kharisya Putri</h3>
+            <div class="ketua-jabatan">
+              <i class="fas fa-user-tie"></i> Ketua Divisi Kesekretariatan
+            </div>
+            <div class="ketua-quote">
+              <i class="fas fa-quote-right"></i>
+              <p>
+                "Administrasi yang rapi, inventaris yang terkelola, dan
+                sekretariat yang nyaman adalah fondasi gerakan organisasi yang
+                kuat."
+              </p>
+            </div>
+            <div class="ketua-motto">
+              <i class="fas fa-heart"></i> "Tertib Administrasi, Nyaman
+              Berkegiatan"
+            </div>
+            <div class="ketua-sosial">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LOGO & DESA ==================== -->
+    <section class="logo-desa">
+      <div class="container">
+        <div class="logo-desa-card">
+          <div class="logo-wrapper">
+            <img src="logo.png" alt="Logo IRMANUFA" />
+            <div class="logo-wrapper-text">
+              <h3>IRMANUFA</h3>
+              <p>Ikatan Remaja Masjid Jami' Nurul Falah</p>
+              <span><i class="fas fa-map-marker-alt"></i> Desa Ujungjaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== JADWAL ==================== -->
+    <section id="jadwal" class="jadwal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Jadwal</span>
+          <h2>Kalender <span class="text-green">Kegiatan</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="jadwal-container">
+          <div class="jadwal-card">
+            <div class="jadwal-day">
+              <i class="fas fa-calendar-week"></i>
+              <div>
+                <h4>Cek Inventaris</h4>
+                <span>Minggu Siang</span>
+              </div>
+            </div>
+            <div class="jadwal-list">
+              <div class="jadwal-item">Pengecekan barang inventaris</div>
+              <div class="jadwal-item">Pendataan barang masuk/keluar</div>
+              <div class="jadwal-item">Pelaporan kondisi inventaris</div>
+            </div>
+          </div>
+          <div class="jadwal-card">
+            <div class="jadwal-day">
+              <i class="fas fa-calendar-alt"></i>
+              <div>
+                <h4>Baksos Sekretariat</h4>
+                <span>1 Bulan 1 Kali</span>
+              </div>
+            </div>
+            <div class="jadwal-list">
+              <div class="jadwal-item">Bersih-bersih ruangan sekretariat</div>
+              <div class="jadwal-item">Penataan barang dan dokumen</div>
+              <div class="jadwal-item">Perawatan fasilitas sekretariat</div>
+            </div>
+          </div>
+          <div class="jadwal-card special">
+            <div class="jadwal-day">
+              <i class="fas fa-briefcase-medical"></i>
+              <div>
+                <h4>P3K Sederhana</h4>
+                <span>Terjadwal</span>
+              </div>
+            </div>
+            <div class="jadwal-list">
+              <div class="jadwal-item">Pengecekan stok P3K</div>
+              <div class="jadwal-item">Pengisian ulang perlengkapan</div>
+              <div class="jadwal-item">Kesiapan ruangan inventaris</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== GALERI ==================== -->
+    <section id="galeri" class="galeri">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Dokumentasi</span>
+          <h2>Galeri <span class="text-green">Kegiatan</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="galeri-grid">
+          <div class="galeri-item">
+            <img src="kegiatan1.png" alt="Cek Inventaris" />
+            <div class="galeri-overlay"><span>Sekre Activity</span></div>
+          </div>
+          <div class="galeri-item">
+            <img src="kegiatan2.png" alt="Baksos Sekre" />
+            <div class="galeri-overlay"><span>Baksos Sekretariat</span></div>
+          </div>
+          <div class="galeri-item">
+            <img src="kegiatan3.png" alt="P3K" />
+            <div class="galeri-overlay">
+              <span>Sekretariatan IRMANUFA</span>
+            </div>
+          </div>
+          <div class="galeri-item">
+            <img src="kegiatan4.png" alt="Administrasi" />
+            <div class="galeri-overlay">
+              <span>Pengelolaan Administrasi</span>
+            </div>
+          </div>
+          <div class="galeri-item">
+            <img src="kegiatan5.png" alt="Inventaris" />
+            <div class="galeri-overlay"><span>Pendataan Inventaris</span></div>
+          </div>
+          <div class="galeri-item">
+            <img src="kegiatan6.png" alt="Kebersihan" />
+            <div class="galeri-overlay">
+              <span>Kebersihan Sekretariat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== KONTAK ==================== -->
+    <section id="kontak" class="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hubungi Kami</span>
+          <h2>Informasi <span class="text-green">Kontak</span></h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="kontak-grid">
+          <div class="kontak-info">
+            <div class="info-card">
+              <i class="fas fa-mosque"></i>
+              <h4>Sekretariat</h4>
+              <p>Masjid Jami' Nurul Falah<br />Desa Ujungjaya</p>
+            </div>
+            <div class="info-card">
+              <i class="fab fa-whatsapp"></i>
+              <h4>WhatsApp</h4>
+              <p>+62 812-3456-7890<br />(Chindy)</p>
+            </div>
+            <div class="info-card">
+              <i class="fab fa-instagram"></i>
+              <h4>Instagram</h4>
+              <p>@irmanufa_official</p>
+            </div>
+          </div>
+          <div class="kontak-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="nama"
+                  placeholder="Nama Lengkap"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Alamat Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="pesan"
+                  rows="4"
+                  placeholder="Pesan / Pertanyaan ..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-submit" id="submitBtn">
+                <i class="fas fa-paper-plane"></i> Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Logo" />
+            <div>
+              <h4>IRMANUFA</h4>
+              <p>Ikatan Remaja Masjid Jami' Nurul Falah</p>
+            </div>
+          </div>
+          <div class="footer-nav">
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#program">Program</a>
+            <a href="#jadwal">Jadwal</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#kontak">Kontak</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Divisi Kesekretariatan IRMANUFA | Masjid Jami' Nurul
+            Falah, Desa Ujungjaya
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== MODAL NOTIFIKASI ==================== -->
+    <div id="notificationModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
+        <h3>Pesan Terkirim!</h3>
+        <p>
+          Terima kasih <span id="modalNama"></span>, pesan Anda telah berhasil
+          dikirim. Tim IRMANUFA akan segera menghubungi Anda.
+        </p>
+        <button class="modal-btn" onclick="closeModal()">Tutup</button>
+      </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-icon error"><i class="fas fa-times-circle"></i></div>
+        <h3>Gagal Terkirim!</h3>
+        <p id="errorMessage">Terjadi kesalahan. Silakan coba lagi.</p>
+        <button class="modal-btn" onclick="closeErrorModal()">Tutup</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
